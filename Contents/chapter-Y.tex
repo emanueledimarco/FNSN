@@ -1,0 +1,88 @@
+\chapter{Units}
+\label{chap:units}
+
+\section{Microscopic Units for Nuclear, Subnuclear and particle physics}
+
+For all measurements we have seen it appears clearly that the MKSA (kilograms, Kelvin, seconds and Ampers) is not well adapted. It is more convenient to use a redefined set of units based on a redefinition of the energy units. \\
+
+\definition{{\bf The electron-Volt}: 
+Equivalent energy of an elementary charge accelerated by an electric field of 1 V/m over a distance of 1m. {\it i.e.} 
+
+$$ 1 eV = 1.6 \cdot 10^{-19} \; {\rm J} $$}
+
+Using the relativistic formulae of rest mass that are detailed in Chapter~\ref{Relativity}, the mass of the proton can be expressed in terms of energy as:
+
+$$ m_p c^2 = 1.66 \cdot 10^{-27} \, {\rm [kg]} \times (3\cdot 10^8)^2 {\rm [m.s^-1]^2} = 1.5 \cdot 10^{-10} \, {\rm J} $$
+
+Therefore 
+
+$$ m_p c^2 = 1.5 \cdot 10^{-10} {\rm [J]} / 1.6 \cdot 10^{-19} \; {\rm [J/eV]} = 0.94 \cdot 10^9 {\rm eV} = 938 MeV$$
+
+The natural unit for Nuclear and lowest to intermediate energy sub-nuclear physics process is the Mega-electron-volts {\bf MeV}.
+
+
+
+\section{Natural units}
+We have already seen how keeping fundamental constants in calculation
+(like $c$, $\hslash$ or $e$) is quite uncomfortable. We have also
+expressed energy and masses in electronvolt, which allows us to write
+particle masses using simple prefixes in spite of using factors like
+$10^{-27}$ to write the mass of a proton in kilograms.
+
+It is common practice, in particle physics but also in other fields,
+to use a system of units in which $c = \hslash =1 $. In this way the
+velocity is dimensionless, time has the same measure of lengths and
+masses and momentum are measured as energies. This system is called
+\emph{System of natural units}.
+
+In some cases is also useful to adopt a system in which
+$\epsilon_0 = \mu_0 = 1$ (Heavyside--Lorentz units).
+
+In the S.I. we have:
+\[ [\hslash] = [M][L^2][T^{-1}]\] then, in natural units:
+\[ [M] = [L^{-1}] = [T^{-1}]\] and we are allowed to write:
+\begin{eqnarray*}
+  1\,\kilo\gram &=& 5.6\,\times\,10^{24}\,\giga\electronvolt\\
+  1\,\meter &=& 5.1\,\times\,10^{15}\,\giga\electronvolt^{-1}\\
+  1\,\second &=& 1.5\,\times\,10^{24}\,\giga\electronvolt^{-1}\\
+\end{eqnarray*}
+and also:
+\begin{eqnarray*}
+  1\,\second &=& 3\,\times\,10^{8}\,\meter\\
+  1\,\angstrom &=& \frac{1}{200\,\electronvolt}\\
+\end{eqnarray*}
+
+\begin{table}[h!]
+\centering
+  \begin{tabular}{@{}lllll@{}}
+    \toprule
+    & \multicolumn{3}{c}{MKS}     & Natural     \\ \midrule
+    Quantity & $[M]^p$ & $[L]^q$ & $[T]^r$ & $E^{p-q-r}$ \\ \midrule
+    Action   & 1       & 2       & -1      & 0           \\
+    Velocity & 0       & 1       & -1      & 0           \\
+    Mass     & 1       & 0       & 0       & 1           \\
+    Length   & 0       & 1       & 0       & -1          \\
+    Time     & 0       & 0       & 1       & -1          \\
+    Momentum & 1       & 1       & -1      & 1           \\
+    Energy   & 1       & 2       & -2      & 1           \\
+    $\alpha$ & 0       & 0       & 0       & 0           \\ \bottomrule
+  \end{tabular}
+\end{table}
+
+\section{Units of radioactivity}
+
+The activity of a radioactive source is defined as the number of
+decays per unit of time. An unit often associated with the activity is
+the \emph{curie}:
+\[1\,\curie = 3.7\times10^{10} \text{decays per }\second\] and the
+Becquerel corresponds to one decay per second, so:
+\[1\,\becquerel = 0.27\times 10^{-10} \curie\] Let's consider Radium
+as example, a nucleus of $^{226}\text{Ra}$ decays emitting an
+alpha--particle with $E = 4.5\,\mega\electronvolt$, with a
+$T_{1/2} = 1602 \text{y} = 5.052 \times 10^{10}\,\second$. A gram of
+radium is made of
+\[\frac{N_A}{A} = \frac{6.022\times 10^{23}}{226} = 2.7\times
+  10^{21}\] nuclei, and has a corresponding activity of:
+\[\mathcal{A} = \frac{N_A}{A\,\tau} = 3.7\times 10^{10} \,\second^{-1}
+  = 1\,\curie\].  For comparison, the uranium $^{235}\text{U}$ has an
+half--life of $T_{1/2} = 7.4 \times 10^8 \text{y}$.

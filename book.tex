@@ -1,0 +1,150 @@
+%%%%%%%%%%%%%%%%%%%% book.tex %%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% sample root file for the chapters of your "monograph"
+%
+% Use this file as a template for your own input.
+%
+%%%%%%%%%%%%%%%% Copied and modified from Springer-Verlag %%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+% RECOMMENDED %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[graybox,envcountchap,sectrefs]{svmono}
+
+% choose options for [] as required from the list
+% in the Reference Guide
+
+\usepackage{mathptmx}
+\usepackage{helvet}
+\usepackage{courier}
+\usepackage{type1cm}    
+
+
+
+\usepackage{braket}
+
+\usepackage{makeidx}         % allows index generation
+\usepackage{graphicx}        % standard LaTeX graphics tool
+                             % when including figure files
+\graphicspath{{Figures/}}
+\usepackage{multicol}        % used for the two-column index
+\usepackage[bottom]{footmisc}% places footnotes at page bottom
+\usepackage{amsmath,latexsym}
+\usepackage[free-standing-units,load=addn]{siunitx}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{amssymb}
+\usepackage{commath}
+
+\usepackage{hyperref} %cross references in item lists
+\hypersetup{
+    colorlinks=true,
+    citecolor=blue,
+    filecolor=blue,
+    linkcolor=blue,
+    urlcolor=blue
+%        linkbordercolor = {white}
+}
+\usepackage{esint} %multiple circle integrals
+\usepackage{booktabs}
+\usepackage{comment}
+%\newtheorem{definition}{Definition}
+\newtheorem{postulate}{Postulate}
+
+\newtheorem{experiment}{Experiment}
+
+\newcommand{\lag}{\mathcal{L}}
+\newcommand{\der}[2]{\frac{d #1}{d #2}}
+\newcommand{\dpar}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\rr}[1]{\left(#1\right)}
+\newcommand{\qq}[1]{\left[#1\right]}
+\newcommand{\cc}[1]{\left\{#1\right\}}
+\newcommand{\avg}[1]{\langle{#1\rangle}}
+%\newcommand{\abs}[1]{\left|#1\right|}
+
+% see the list of further useful packages
+% in the Reference Guide
+
+\makeindex             % used for the subject index
+                       % please use the style svind.ist with
+                       % your makeindex program
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\includeonly{Contents/preface,Contents/acknow,Contents/introduction,Contents/chapter-A,Contents/References-A,Contents/chapter-B,Contents/References-B,Contents/chapter-Y,Contents/chapter-C,Contents/References-C,Contents/chapter-D,Contents/chapter-E,Contents/References-E,Contents/chapter-I-1314,Contents/chapter-I,Contents/chapter-G,Contents/chapter-I-3,Contents/chapter-K,Contents/References-K,Contents/chapter-L}  %% TO RELEASE SUBSETS ONLY
+
+\begin{document}
+
+
+\title{Nuclear and Subnuclear Physics}
+\subtitle{Istituzioni di Fisica Nucleare e Subnucleare}
+
+\author{Emanuele Di Marco, Valerio Ippolito, Marumi Kado}
+
+\maketitle
+
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{Contents/dedic}
+%\include{Contents/foreword}
+\include{Contents/preface}
+\include{Contents/acknow}
+
+\tableofcontents
+
+%\include{Contents/acronym}
+
+
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{Contents/introduction}
+\include{Contents/chapter-A}
+\include{Contents/References-A}
+\include{Contents/chapter-B}
+\include{Contents/References-B}
+\include{Contents/chapter-C}
+\include{Contents/References-C}
+\include{Contents/chapter-I-1314}
+\include{Contents/chapter-D}
+\include{Contents/chapter-E}
+\include{Contents/chapter-H} %hadronic showers
+\include{Contents/References-E}
+\include{Contents/chapter-K}
+\include{Contents/References-K}
+\include{Contents/chapter-I}
+\include{Contents/chapter-K-2}
+\include{Contents/References-K2}
+\include{Contents/chapter-L}
+%\include{Contents/chapter-D}
+\include{Contents/chapter-G} %detectors
+%\include{Contents/chapter-F} % merged with particle detectors
+\include{Contents/chapter-I-3}
+%\include{Contents/chapter-M}
+%\include{Contents/chapter-N}
+%\include{Contents/chapter-N-2}
+\include{Contents/chapter-O}
+\include{Contents/References-O}
+\include{Contents/chapter-P}
+%\include{Contents/chapter-X}
+\include{Contents/chapter-Y}
+
+
+%\include{Contents/appendix}
+
+\backmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\include{Contents/glossary}
+\include{Contents/solutions}
+%\printindex
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{document}
+
+
+
+
+
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
